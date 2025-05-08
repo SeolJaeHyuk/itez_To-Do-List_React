@@ -92,7 +92,7 @@ function App() {
 
   // 삭제 관련 코드
   const deletetodo = (todoIndex: number) => {
-    const confirmDelete = window.confirm("삭제 하시겠습니까?");
+    const confirmDelete = window.confirm("삭제하시겠습니까?");
     if (confirmDelete) {
       const updatedLists = [...lists];
       updatedLists[selectedListIndex].todos.splice(todoIndex, 1);
